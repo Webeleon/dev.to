@@ -34,7 +34,7 @@ export class ArticleApi extends AuthenticatedRequester {
       published: data.published !== false,
       social_image: data.social_image || null, // URL
       tag_list: data.tag_list,
-      tags: data.tags,
+      tags: data.tags || null,
       slug: data.slug,
       path: data.path, // URL
       canonical_url: data.canonical_url, // URL
