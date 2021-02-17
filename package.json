@@ -1,6 +1,6 @@
 {
   "name": "@webeleon/dev.to",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "dev.to API client",
   "public": true,
   "keywords": [
@@ -13,7 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "patch":  "npm run build && npm version patch && npm publish",
+    "patch": "npm run build && npm version patch && npm publish",
     "format": "prettier --write '**/*.ts'",
     "build": "tsc"
   },
