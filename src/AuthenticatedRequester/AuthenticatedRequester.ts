@@ -27,7 +27,7 @@ export class AuthenticatedRequester {
       {
         method,
         headers: {
-          'api-keys': this.apiKey,
+          'api-key': this.apiKey,
           'Content-Type': 'application/json',
         }
       }
