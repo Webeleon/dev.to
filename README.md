@@ -41,12 +41,13 @@ articleApiClient
 ```
 
 ## Dev.to API support
-
-### Article
 ```
 Work in progress.
+At the moment only endpoint required for the site https://webeleon.dev are implemented
 If you need more endpoints make a PR or create an Issue
 ```
+
+### Article
 
 - [get article by id](https://docs.dev.to/api/#operation/getArticleById)
 - [get user published articles](https://docs.dev.to/api/#operation/getUserArticles)
