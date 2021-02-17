@@ -13,6 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
+    "patch":  "npm run build && npm version patch && npm publish",
     "format": "prettier --write '**/*.ts'",
     "build": "tsc"
   },
