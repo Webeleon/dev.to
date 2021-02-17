@@ -20,7 +20,7 @@ export class ArticleApi extends AuthenticatedRequester {
   }
 
   static serializeArticles(data: any[]): Article[] {
-    return data.map(this.serializeArticle);
+    return data.map(ArticleApi.serializeArticle);
   }
 
   static serializeArticle(data: any): Article {
