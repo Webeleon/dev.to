@@ -32,7 +32,7 @@ export class ArticleApi extends AuthenticatedRequester {
       cover_image: data.cover_image,
       readable_publish_date: data.readable_publish_date || null,
       published: data.published !== false,
-      social_image: data.social_image, // URL
+      social_image: data.social_image || null, // URL
       tag_list: data.tag_list,
       tags: data.tags,
       slug: data.slug,
