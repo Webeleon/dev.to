@@ -8,13 +8,48 @@
 
 ## Getting started
 
-```
+```bash
 npm i @webeleon/dev.to
+```
+
+### Use the all inclusive client
+```typescript
+import { DevTo } from '@webeleon/dev.to';
+
+const devtToClient = new DevTo('API KEY');
+
+devtToClient
+  .articleApi
+  .getUserPublishedArticle()
+  .then((articles: Article[]) => {
+    // do some stuff ;) 
+  });
+```
+
+### Use a specific client
+
+```typescript
+import { ArticleApi } from '@webeleon/dev.to';
+
+const articleApiClient = new ArticleApi('API _KEY');
+
+articleApiClient
+  .getUserPublishedArticle()
+  .then((articles: Article[]) => {
+    // do some stuff ;) 
+  });
 ```
 
 ## Dev.to API support
 
-...
+### Article
+```
+Work in progress.
+If you need more endpoints make a PR or create an Issue
+```
+
+- [get article by id](https://docs.dev.to/api/#operation/getArticleById)
+- [get user published articles](https://docs.dev.to/api/#operation/getUserArticles)
 
 ## Useful Links
 - :link: [dev.to API documentation](https://docs.dev.to/api/)
