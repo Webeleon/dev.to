@@ -8,6 +8,7 @@ export type responseSerializer<Return> = (data: any) => Return;
 export class AuthenticatedRequester {
   constructor(
     protected readonly apiKey: string,
+    protected readonly serialize: boolean = true,
   ) {
     if (!apiKey) throw new Error('dev.to API key required.');
   }
@@ -18,7 +19,7 @@ export class AuthenticatedRequester {
     const json = await this.request(
       url
     );
-    return serializer ? serializer(json) : (json as Return);
+    return serializer && this.serialize ? serializer(json) : (json as Return);
   }
 
   async request(url: string, body?: string, method = 'get'): Promise<any> {
