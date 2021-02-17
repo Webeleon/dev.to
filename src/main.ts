@@ -4,8 +4,8 @@ import { ArticleApi } from './ArticleApi/ArticleApi';
 export class DevTo extends AuthenticatedRequester {
   articleApi: ArticleApi;
 
-  constructor(apiKey: string) {
-    super(apiKey);
+  constructor(apiKey: string, serialize = true) {
+    super(apiKey, serialize);
     this.articleApi = new ArticleApi(apiKey);
   }
 }
