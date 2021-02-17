@@ -6,7 +6,7 @@ export class DevTo extends AuthenticatedRequester {
 
   constructor(apiKey: string, serialize = true) {
     super(apiKey, serialize);
-    this.articleApi = new ArticleApi(apiKey);
+    this.articleApi = new ArticleApi(apiKey, serialize);
   }
 }
 
