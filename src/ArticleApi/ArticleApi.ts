@@ -6,14 +6,14 @@ export class ArticleApi extends AuthenticatedRequester {
 
   async getPublishedArticleById(id: string): Promise<Article> {
     return this.get<undefined, Article>(
-      `/article/${id}`,
+      `/articles/${id}`,
       undefined,
       ArticleApi.serializeArticle,
     )
   }
   async getUserPublishedArticle(page = 1 , per_page = 30): Promise<Article[]> {
     return this.get<PaginatedQuery, Article[]>(
-      '/article/me/published',
+      '/articles/me/published',
       { page, per_page },
       ArticleApi.serializeArticles,
       );
