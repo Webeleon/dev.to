@@ -51,6 +51,7 @@ If you need more endpoints make a PR or create an Issue
 
 - [get article by id](https://docs.dev.to/api/#operation/getArticleById)
 - [get user published articles](https://docs.dev.to/api/#operation/getUserArticles)
+- [get article by path](https://docs.dev.to/api/#operation/getArticleByPath)
 
 ## Useful Links
 - :link: [dev.to API documentation](https://docs.dev.to/api/)

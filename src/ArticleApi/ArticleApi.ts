@@ -4,19 +4,28 @@ import { PaginatedQuery } from '../interfaces/query/Paginated';
 
 export class ArticleApi extends AuthenticatedRequester {
 
-  async getPublishedArticleById(id: string): Promise<Article> {
+  async getArticleById(id: string): Promise<Article> {
     return this.get<undefined, Article>(
       `/articles/${id}`,
       undefined,
       ArticleApi.serializeArticle,
     )
   }
+
   async getUserPublishedArticle(page = 1 , per_page = 30): Promise<Article[]> {
     return this.get<PaginatedQuery, Article[]>(
       '/articles/me/published',
       { page, per_page },
       ArticleApi.serializeArticles,
       );
+  }
+
+  async getArticleByPath(username: string, slug: string): Promise<Article> {
+    return this.get<undefined, Article>(
+      `/articles/${username}/${slug}`,
+      undefined,
+      ArticleApi.serializeArticle,
+    );
   }
 
   static serializeArticles(data: any[]): Article[] {
