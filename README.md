@@ -54,6 +54,7 @@ If you need more endpoints make a PR or create an Issue
 - [get article by path](https://docs.dev.to/api/#operation/getArticleByPath)
 
 ## Useful Links
+- :link: [documentation](https://webeleon.github.io/dev.to/)
 - :link: [dev.to API documentation](https://docs.dev.to/api/)
 - :link: [NPM package](https://www.npmjs.com/package/@webeleon/dev.to)
 - :link: [discord support server](https://discord.com/invite/a9PdTrv)
