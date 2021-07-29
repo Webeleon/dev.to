@@ -55,6 +55,6 @@
     "query-string": "^7.0.0"
   },
   "lint-staged": {
-    "*.{ts,js,css,md}": "prettier --write"
+    "*.{ts,js,css,md}": "npm run generate-doc & prettier --write"
   }
 }
