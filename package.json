@@ -43,7 +43,7 @@
     "jest": "27.5.1",
     "lint-staged": "11.2.6",
     "prettier": "2.6.2",
-    "sinon": "11.1.2",
+    "sinon": "13.0.2",
     "standard-version": "9.3.2",
     "ts-jest": "27.1.4",
     "ts-node": "10.7.0",
