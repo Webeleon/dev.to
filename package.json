@@ -39,7 +39,7 @@
     "@commitlint/config-conventional": "13.2.0",
     "@types/jest": "27.5.2",
     "@types/sinon": "10.0.20",
-    "husky": "7.0.4",
+    "husky": "8.0.3",
     "jest": "27.5.1",
     "lint-staged": "11.2.6",
     "prettier": "2.8.8",
