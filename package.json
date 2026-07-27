@@ -44,7 +44,7 @@
     "lint-staged": "11.2.6",
     "prettier": "2.8.8",
     "sinon": "11.1.2",
-    "standard-version": "9.5.0",
+    "commit-and-tag-version": "9.5.0",
     "ts-jest": "27.1.5",
     "ts-node": "10.9.2",
     "typedoc": "0.25.7",
